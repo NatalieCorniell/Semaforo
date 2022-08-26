@@ -1,0 +1,197 @@
+/* - Azul: #80DEEA
+- Gris: #616161
+- Gris Oscuro: #373737
+- Rojo Semaforo: #AD0000
+- Amarillo Semaforo: #DEE150
+- Verde Semaforo: #245300 */
+@import url('https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100;300;700&display=swap');
+
+body.color{
+  /* background-color: #616161; */
+background-color: #b3b3b3;
+
+overflow-x: hidden;
+}
+body .semaforo ul{
+  background-color: black;
+}
+.second{
+    background-color: #018786;
+    padding-top: 0;
+}
+.Botones .div-btn{
+    text-align: center;
+}
+    .Botones .div-btn .btn-start{
+      background-color: #03DAC6;
+      border-radius: 40px;
+      width: 32%;
+      height: 5rem;
+      font-size: 30px;
+      font-weight: 700;
+      border: 4px solid #018786;
+}
+.Botones{
+    padding-top: 70px;
+}
+.linea{
+    background-color: #03DAC6;
+    height: 20px !important;
+}
+body .semaforo {
+    display: table;
+    text-align: center;
+    width: 170px;
+    height: 350px;
+    border: 15px solid #000000;
+    box-sizing: border-box;
+    border-radius: 15%;
+    background-image: linear-gradient(to bottom, white, gray);
+  }
+  body .semaforo ul {
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    vertical-align: middle;
+    list-style-type: none;
+  }
+  body .semaforo ul li {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+  }
+
+  body .semaforo ul li#Red {
+    background: #AD0000;
+    animation: piscaFarol 3s ease 4s infinite;
+  }
+  body .semaforo ul li#Yellow {
+    background: #DEE150;
+    animation: piscaFarol 3s ease 5s infinite;
+  }
+  body .semaforo ul li#Green {
+    background: #245300;
+    animation: piscaFarol 3s ease 6s infinite;
+  }
+  .un_available{
+    background: gray !important;
+  }
+
+  /* Estadisticas */
+
+
+ul {
+  list-style: none;
+}
+
+.container_stadistics {
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  margin: auto;
+  background-color: #FFF;
+  padding: 3rem 3.5rem;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  max-width: 500px;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  width: 101%;
+  height: 110%;
+  background-image: linear-gradient(to right bottom, #4081f8, #03DAC6);
+  z-index: -1;
+  border-radius: 15px;
+  transform: rotate(-5deg);
+  box-shadow: 0 0 45px 5px rgba(0, 0, 0, .2);
+}
+.card li {
+  width: 50%;
+  margin: 15px 0;
+}
+
+.card li p {
+  display: flex;
+}
+
+.card li h3 {
+  display: inline-block;
+  font-size: 2rem;
+  color: #333;
+  vertical-align: top;
+  margin-right: 5px;
+  line-height: 1.2;
+}
+.card li .fa {
+  font-size: .75rem;
+}
+.card li span {
+  color: #9ea6a8;
+  font-weight: bold;
+  font-size: .95rem;
+}
+
+
+.clr-up {
+  color: green;
+}
+
+.clr-down {
+  color: red;
+}
+
+@media screen and (max-width: 500px) {
+  .card::before {
+    top: -10px;
+    left: -2px;
+  }
+  .card li {
+    width: 100%;
+  }
+  .card li:not(:first-of-type) {
+    margin-top: 15px;
+  }
+}
+
+.col-lg-6.firstColum{
+  text-align: -webkit-right;
+}
+#TimerToCross{
+  display: none;
+}
+#pasos, #metros{
+  background: transparent;
+    border: none;
+}
+#Timer, #TimerToCross{
+  background: transparent;
+    border: none;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: red;
+    width: 13rem;
+}
+/*   
+  @keyframes piscaFarol {
+     from {
+        box-shadow: inset 0 -10px 15px rgba(255,255,255,0.4),
+  inset -2px -1px 500px rgba(0,0,0,0.4),
+  0 0 1px #000;
+     }
+     to { 
+       box-shadow: inset -2px -1px 200px rgba(0,0,0,0.1);
+     }
+  } */
